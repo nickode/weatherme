@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>WeatherMe Baby!</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <fieldset>
+                <form action="/" method="post">
+                    <input name="city" type="text" class="cityInput" placeholder="Enter a City" required>
+                    <input type="submit" class="submitBtn" value="Weather Me!">
+                </form>
+
+            
+            <%if(weather !== null){ %>
+                    <p><%= weather %></p>
+                <% } %>
+            <%if(error !== null){ %>
+                    <p><%= error %></p>
+                <% } %>
+            
+
+            </fieldset>
+        </div>
+    </body>
+</html>
